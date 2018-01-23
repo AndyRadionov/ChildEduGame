@@ -47,3 +47,5 @@ deploy:
   secret_access_key: "/XrdAp40OjuZTePBFCKr2U+4anjAuO4sGtJ9Fjv9"
   bucket: "childedugame"
   file: "ChildEduGame/build/outputs/apk/debug/app-debug.apk"
+  file_glob: "true"
+  skip_cleanup: true
