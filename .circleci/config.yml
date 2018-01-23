@@ -25,6 +25,5 @@ jobs:
           destination: reports
       - store_test_results:
           path: app/build/test-results
-      - run:
-          name: HockeyApp
+      - deploy:
           command: ./deploy_dev.sh
