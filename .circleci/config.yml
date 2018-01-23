@@ -28,5 +28,5 @@ jobs:
       - deploy:
           name: Deploy
           command: |
-              curl -F "status=2" -F "notify=0" -F "ipa=ChildEduGame/build/outputs/apk/app-debug.apk" -H "X-HockeyAppToken: $HOCKEYAPP_TOKEN" https://rink.hockeyapp.net/api/2/apps/$AndroidFirstAppId/upload
+              curl -F "status=2" -F "notify=0" -F "ipa=ChildEduGame/build/outputs/apk/debug/app-debug.apk" -H "X-HockeyAppToken: $HOCKEYAPP_TOKEN" https://rink.hockeyapp.net/api/2/apps/$AndroidFirstAppId/app_versions/upload
 
