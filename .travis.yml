@@ -46,4 +46,4 @@ deploy:
   access_key_id: "AKIAISXNRQX4B3H4QW3A"
   secret_access_key: "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"
   bucket: "childedugame"
-  local_dir: build
+  file: "ChildEduGame/build/outputs/apk/debug/app-debug.apk"
