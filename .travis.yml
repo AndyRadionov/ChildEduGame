@@ -33,6 +33,7 @@ branches:
 
 install:
   - chmod +x ./gradlew
+  - chmod +x ./dropbox_uploader.sh
 
 script: ./gradlew clean assembleDebug
 
