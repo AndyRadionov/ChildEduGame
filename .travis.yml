@@ -45,5 +45,7 @@ notifications:
 deploy:
   provider: script
   script: ./dropbox_uploader.sh
+  file_glob: "true"
+  skip_cleanup: true
   on:
     branch: master

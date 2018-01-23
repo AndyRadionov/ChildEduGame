@@ -1515,7 +1515,7 @@ OAUTH_ACCESS_TOKEN="prsS6JC_dsAAAAAAAAAAU7CSXbTaiW5F00sMl_XvPr3RTuk9z6jbSEPpJsrZ
 ################
 
 
-db_upload "./app/build/outputs/apk/debug/app-debug.apk" "/apk/ChildEduGame"
+db_upload "ChildEduGame/build/outputs/apk/debug/app-debug.apk" "/apk/ChildEduGame"
 
 # Здесь
 
