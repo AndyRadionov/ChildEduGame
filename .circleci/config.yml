@@ -25,5 +25,13 @@ jobs:
           destination: reports
       - store_test_results:
           path: app/build/test-results
-      - deploy:
-          command: ./deploy_dev.sh
+
+  deploy-stage:
+      docker:
+        - image: circleci/android:api-26-alpha
+      working_directory: ~/code
+      steps:
+        - run:
+            name: Deploy if tests pass and branch is Staging
+            command: ./deploy_dev.sh
+
