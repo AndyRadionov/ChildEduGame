@@ -42,10 +42,11 @@ notifications:
     on_success: change
     on_failure: always
 
-deploy:
-  provider: script
-  script: ./dropbox_uploader.sh
-  file_glob: "true"
-  skip_cleanup: true
-  on:
-    branch: master
+after_success:
+  deploy:
+    provider: script
+    script: ./dropbox_uploader.sh
+    file_glob: "true"
+    skip_cleanup: true
+    on:
+      branch: master
